@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/MyNotes/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android Studio/MyNotes/app/src/main/res/layout/activity_splash_screen.xml" value="0.12681159420289856" />
+        <entry key="..\:/Android Studio/MyNotes/app/src/main/res/layout/editor_fragment.xml" value="0.12681159420289856" />
+        <entry key="..\:/Android Studio/MyNotes/app/src/main/res/layout/list_item.xml" value="0.22" />
+        <entry key="..\:/Android Studio/MyNotes/app/src/main/res/layout/main_fragment.xml" value="0.1" />
+        <entry key="..\:/Android Studio/MyNotes/app/src/main/res/menu/menu_main.xml" value="0.1578125" />
+        <entry key="..\:/Android Studio/MyNotes/app/src/main/res/menu/menu_main_selected_items.xml" value="0.1578125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
