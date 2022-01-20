@@ -1,0 +1,36 @@
+name: Unit Test for Pull Request
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - name: Setup JDK
+        uses: actions/setup-java@v2.5.0
+        with:
+          distribution: temurin
+          java-version: "11"
+      - name: Set execution flag for gradlew
+        run: chmod +x gradlew
+      - name: Unit tests
+        run: bash ./gradlew test --stacktrace
+        
+  add_label:
+    name: Add "approved" label when approved
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add "approved" label when approved
+        uses: pullreminders/label-when-approved-action@master
+        env:
+          APPROVALS: "1"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ADD_LABEL: "status: approved"
+          REMOVE_LABEL: ""
